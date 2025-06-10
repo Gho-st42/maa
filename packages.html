@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Media Art Agency – Our Packages</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- =======================
+       NAVBAR
+       Contains logo, navigation links, and hamburger menu
+  ======================== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <!-- LOGO IMAGE: Check if 'logo-.png' is correct or a typo -->
+          <img src="assets/images/logo-.png" alt="MAA Logo" />
+        </a>
+        <span>Media Art Agency</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="productions.html">M.A.A. Productions</a></li>
+        <li><a href="career.html">Start a Career</a></li>
+        <li><a href="packages.html" class="active">Our Packages</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+      <!-- Hamburger menu for mobile navigation -->
+      <button class="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- =======================
+         DISCOUNT BANNER
+         Shows current discounts (if any)
+    ======================== -->
+    <section class="discount">
+      No discounts right now<strong></strong>
+    </section>
+
+    <!-- =======================
+         PACKAGES SECTION
+         Shows available packages
+    ======================== -->
+    <h2 class="page-heading">Available Packages</h2>
+    <div class="package-grid">
+      <div class="package-card" data-name="Standard">Standard</div>
+      <div class="package-card" data-name="Advanced">Advanced</div>
+      <div class="package-card" data-name="Pro">Pro</div>
+    </div>
+
+    <!-- =======================
+         EXTRAS SECTION
+         Shows available extras
+    ======================== -->
+    <h2 class="page-heading">Available Extras</h2>
+    <div class="package-grid">
+      <div class="package-card">Sponsored Ad</div>
+      <div class="package-card">Marketing</div>
+      <div class="package-card">2 Extra Videos</div>
+      <div class="package-card">2 Extra Designs</div>
+    </div>
+
+    <!-- =======================
+         PACKAGE DETAILS MODAL
+         Modal popup for package details
+    ======================== -->
+    <div class="modal" id="package-modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3 id="pkg-name"></h3>
+        <ul id="pkg-details">
+          <li>Videos: <span class="count" data-field="videos">0</span></li>
+          <li>Designs: <span class="count" data-field="designs">0</span></li>
+          <li>Photos: <span class="count" data-field="photos">0</span></li>
+          <li>Extras: <span class="count" data-field="extras">0</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- =======================
+         CONTACT FORM
+         For package inquiries
+    ======================== -->
+    <form action="https://formsubmit.co/packagesform.maa@gmail.com" method="POST" class="contact-form">
+      <div class="name-row">
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required pattern="[A-Za-z]+" title="Letters only" />
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required pattern="[A-Za-z]+" />
+      </div>
+      <input type="text" id="company" name="company" placeholder="Company Name" required pattern="[A-Za-z ]+" />
+      <input type="tel" id="phone" name="phone" placeholder="Phone (+20...)" required />
+      <input type="email" id="email" name="email" placeholder="Email" required />
+
+      <label>Who did you hear from us?</label>
+      <select name="referrer" id="heard" required>
+        <option value="">-- Select --</option>
+        <option value="social">Social Media</option>
+        <option value="friend">From a Friend</option>
+        <option value="client">From a Client</option>
+        <option value="sales">From our Sales Team</option>
+      </select>
+      <!-- This input is shown only if 'client' or 'sales' is selected -->
+      <input type="text" name="referrerName" id="heard-name" placeholder="Who?" style="display: none;" />
+
+      <label>Desired Package</label>
+      <select name="desiredPackage" id="desiredPackage" required>
+        <option>Standard</option>
+        <option>Advanced</option>
+        <option>Pro</option>
+      </select>
+
+      <label>Need something "Extra" ?</label>
+      <select name="desiredextra" id="desiredextra" required>
+        <option>No</option>
+        <option>Sponsored Ad</option>
+        <option>Marketing</option>
+        <option>2 Extra Videos</option>
+        <option>2 Extra Designs</option>
+      </select>
+      <label>One of our sales team will contact you shortly</label>
+      <div></div>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <!-- =======================
+       FOOTER
+       Contains logo, social links, and developer credit
+  ======================== -->
+  <footer>
+    <div class="footer-logo">
+      <img src="assets/images/maa.png" alt="MAA Logo" />
+    </div>
+    <div class="footer-follow">
+      <p>Follow US</p>
+      <!-- Facebook link -->
+      <a href="https://www.facebook.com/profile.php?id=61577105932774"><img src="assets/icons/facebook.svg" alt="Facebook" /></a>
+      <!-- Instagram link: Check if 'media_art_agancy' is correct -->
+      <a href="https://www.instagram.com/media_art_agancy"><img src="assets/icons/instagram.svg" alt="Instagram" /></a>
+      <!-- YouTube link: Currently points to index.html, update to actual YouTube channel if available -->
+      <a href="index.html"><img src="assets/icons/youtube.svg" alt="YouTube" /></a>
+    </div>
+    <div class="footer-dev">
+      <p>Developed By | Mohamed Mostafa</p>
+      <a href="https://www.instagram.com/bravo__07"><img src="assets/icons/instagram.svg" alt="Instagram" /></a>
+      <a href="https://x.com/ghost_42"><img src="assets/icons/twitter.svg" alt="Twitter" /></a>
+    </div>
+    <!-- supporter here -->
+  </footer>
+
+  <!-- =======================
+       SCRIPTS
+       Handles modal popup and form logic
+  ======================== -->
+  <script src="js/main.js"></script>
+  <script>
+    // Handles package modal popup and dynamic form logic
+    document.addEventListener('DOMContentLoaded', () => {
+      // Package data for modal
+      const data = {
+        Standard: { videos: 10, designs: 5, photos: 25, extras: "None" },
+        Advanced: { videos: 15, designs: 10, photos: 50, extras: "Marketing" },
+        Pro: { videos: 30, designs: 15, photos: 80, extras: "Marketing" }
+      };
+
+      // Show modal with package details
+      document.querySelectorAll('.package-card[data-name]').forEach(card => {
+        card.addEventListener('click', () => {
+          const name = card.dataset.name;
+          document.getElementById('pkg-name').innerText = `${name} Package`;
+          Object.entries(data[name]).forEach(([k, v]) => {
+            document.querySelector(`.count[data-field="${k}"]`).innerText = v;
+          });
+          document.getElementById('package-modal').style.display = 'flex';
+        });
+      });
+
+      // Close modal
+      document.querySelector('.close-btn').onclick = () => {
+        document.getElementById('package-modal').style.display = 'none';
+      };
+
+      // Show/hide "Who?" input based on referrer selection
+      const heard = document.getElementById('heard');
+      const heardName = document.getElementById('heard-name');
+      heard.addEventListener('change', () => {
+        if (['client', 'sales'].includes(heard.value)) {
+          heardName.style.display = 'block';
+          heardName.required = true;
+        } else {
+          heardName.style.display = 'none';
+          heardName.required = false;
+        }
+      });
+    });
+  </script>
+</body>
+</html>

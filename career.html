@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Media Art Agency – Start a Career</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- =======================
+       NAVIGATION BAR
+       Contains logo, navigation links, and hamburger menu
+  ======================== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <!-- LOGO IMAGE: Check if 'logo-.png' is correct or a typo -->
+          <img src="assets/images/logo-.png" alt="MAA Logo" />
+        </a>
+        <span>Media Art Agency</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="productions.html">M.A.A. Productions</a></li>
+        <li><a href="career.html" class="active">Start a Career</a></li>
+        <li><a href="packages.html">Our Packages</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+      <!-- Hamburger menu for mobile navigation -->
+      <button class="hamburger" aria-label="Toggle Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- =======================
+       MAIN CONTENT
+       Hero, call-to-action, and application form
+  ======================== -->
+  <main>
+    <!-- Hero Section: Welcome message with background image -->
+    <section class="full-image-section" style="background-image: url('assets/images/img66.jpg');">
+      <h2 class="overlay hidden">
+        <div>Welcome to the Frontline</div>
+        <div>Ready to be deployed !?</div>
+      </h2>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section plain">
+      <h2 class="overlay hidden">
+        <div>Fill this form and be with us NOW !</div>
+      </h2>
+    </section>
+
+    <!-- Application Form -->
+    <form action="https://formsubmit.co/careerform.maa@gmail.com" method="POST" class="contact-form">
+      <div class="name-row">
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required pattern="[A-Za-z]+" title="Letters only" />
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required pattern="[A-Za-z]+" />
+      </div>
+      <input type="tel" id="phone" name="phone" placeholder="Phone (+20...)" required />
+      <input type="email" id="email" name="email" placeholder="Email" required />
+
+      <label>Who did you hear from us?</label>
+      <select name="referrer" id="heard" required>
+        <option value="">-- Select --</option>
+        <option value="social">Social Media</option>
+        <option value="friend">From a Friend</option>
+        <option value="client">From a Client</option>
+        <option value="sales">From our Sales Team</option>
+      </select>
+      <!-- This input is shown only if 'client' or 'sales' is selected -->
+      <input type="text" name="referrerName" id="heard-name" placeholder="Who?" style="display: none;" />
+
+      <label for="desiredRole">Desired Role</label>
+      <select name="desiredRole" id="desiredRole" required>
+        <option value="">-- Select Role --</option>
+        <option value="graphic-designer">Graphic Designer</option>
+        <option value="video-editor">Video Editor</option>
+        <option value="videographer">Videographer</option>
+        <option value="salesman">Salesman</option>
+        <option value="marketer">Marketer</option>
+        <option value="script-writer">Script Writer</option>
+        <option value="front-end-developer">Front‑end Developer</option>
+        <option value="back-end-developer">Back‑end Developer</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <!-- =======================
+       FOOTER
+       Contains logo, social links, and developer credit
+  ======================== -->
+  <footer>
+    <div class="footer-logo">
+      <img src="assets/images/maa.png" alt="MAA Logo" />
+    </div>
+    <div class="footer-follow">
+      <p>Follow US</p>
+      <!-- Facebook link -->
+      <a href="https://www.facebook.com/profile.php?id=61577105932774"><img src="assets/icons/facebook.svg" alt="Facebook" /></a>
+      <!-- Instagram link: Check if 'media_art_agancy' is correct -->
+      <a href="https://www.instagram.com/media_art_agancy"><img src="assets/icons/instagram.svg" alt="Instagram" /></a>
+      <!-- YouTube link: Currently points to index.html, update to actual YouTube channel if available -->
+      <a href="index.html"><img src="assets/icons/youtube.svg" alt="YouTube" /></a>
+    </div>
+    <div class="footer-dev">
+      <p>Developed By | Mohamed Mostafa</p>
+      <a href="https://www.instagram.com/bravo__07"><img src="assets/icons/instagram.svg" alt="Instagram" /></a>
+      <a href="https://x.com/ghost_42"><img src="assets/icons/twitter.svg" alt="Twitter" /></a>
+    </div>
+    <!-- supporter here -->
+  </footer>
+
+  <!-- =======================
+       SCRIPTS
+       Main JS and scroll-based animation logic
+  ======================== -->
+  <script src="js/main.js"></script>
+  <script src="js/scroll-home.js"></script>
+</body>
+</html>
