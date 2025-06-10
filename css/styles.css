@@ -57,9 +57,9 @@ body {
 .nav-links a {
   color: black;
   text-decoration: none;
-  padding: 6px 12px;
-  border-radius: 8px;
-  transition: background 0.3s;
+  padding: 9px 18px;
+  border-radius: 12px;
+  transition: background 0.5s;
 }
 /* Highlight active or hovered nav link */
 .nav-links a.active,
