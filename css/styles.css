@@ -391,6 +391,19 @@ footer {
   text-align: center;
 }
 
+.full-image1-section {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
 /* =========================
    Welcome Text Animation
    - For animated greeting text
