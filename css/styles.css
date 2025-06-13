@@ -412,11 +412,67 @@ footer {
   transition: opacity 0.4s ease-in-out;
 }
 
-.parallax {
-background-image: url("img1.jpg");
+.parallax-section {
 background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-min-height: 200px;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+color: white;
+text-align: center;
+}
+
+  .gradient-section {
+    background: linear-gradient(62deg, #000000, #333333, #000000, #333333, #000000);
+    /* Adjust the gradient colors and angle as you like */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+    animation: gradientAnimation 20s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .btn2 {
+padding: 0.8em 1.6em;
+background: hsl(0, 0%, 88%);
+color: rgb(0, 0, 0);
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: transform 0.3s ease; /* Animate transform */
+}
+.btn2:hover {
+transform: scale(1.2); /* Grow slightly on hover */
 }
