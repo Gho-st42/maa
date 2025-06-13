@@ -5,8 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Media Art – Home</title>
   <!-- Favicon for browser tab -->
-  <link rel="icon" href="assets/images/logo.png" type="image/png" />
-  <!-- Main stylesheet -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/favicon/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -18,12 +26,14 @@
     <nav class="navbar">
       <div class="logo">
         <a href="index.html">
-          <!-- LOGO IMAGE: Check if 'logo-.png' is correct or a typo -->
           <img src="assets/images/logo-.png" alt="MAA Logo" />
         </a>
         <span>Media Art Agency</span>
       </div>
       <ul class="nav-links">
+        <li><a href="productions.html">M.A.A. Productions</a></li>
+        <li><a href="career.html">Start a Career</a></li>
+        <li><a href="packages.html">Our Packages</a></li>
         <li><a href="index.html" class="active">Home</a></li>
       </ul>
       <!-- Hamburger menu for mobile navigation -->
@@ -41,9 +51,47 @@
   ======================== -->
   <main>
     <!-- Hero Section 1: Welcome message with background image -->
+
+    <section class="full-image-section" style="background-image: url('assets/images/img1.jpg');">
+      <h2 class="overlay hidden">
+        <div>Welcome To</div>
+        <div>Media Art Agency</div>
+      </h2>
+    </section>
+
+    <!-- Hero Section 2: Team message -->
+    <section class="full-image-section" style="background-image: url('assets/images/img42.jpg');">
+      <h2 class="overlay hidden">
+        With <span>the best team ever</span>
+      </h2>
+    </section>
+
+    <!-- Hero Section 3: Strategy message -->
+    <section class="full-image-section" style="background-image: url('assets/images/img2.jpg');">
+      <h2 class="overlay hidden">
+        The <span>Perfect Strategy</span>
+      </h2>
+    </section>
+
+    <!-- Hero Section 4: Creativity message -->
+    <section class="full-image-section" style="background-image: url('assets/images/img23.jpg');">
+      <h2 class="overlay hidden">
+        And <span>Creative ideas</span>
+      </h2>
+    </section>
+
+    <!-- Hero Section 5: Dreams message -->
+    <section class="full-image-section" style="background-image: url('assets/images/img3.jpg');">
+      <h2 class="overlay hidden">
+        That's where all your dreams become a <span>REALITY</span>
+      </h2>
+    </section>
+
+    <!-- Call to Action Section: Button to packages page -->
     <section class="full-image-section">
       <h2 class="overlay hidden">
-        <div>Sorry, Currently under maintenance</div>
+        Start With Us NOW!<br />
+        <button class="btn" onclick="location.href='packages.html'">Show me the offers</button>
       </h2>
     </section>
   </main>
@@ -57,15 +105,15 @@
       <p>Follow US</p>
       <!-- Facebook link -->
       <a href="https://www.facebook.com/profile.php?id=61577105932774">
-        <img src="assets/icons/facebook.svg" alt="Facebook" />
+        <img src="assets/icons/fc.svg" alt="Facebook" />
       </a>
       <!-- Instagram link: Check if 'media_art_agancy' is correct -->
       <a href="https://www.instagram.com/media_art_agancy">
-        <img src="assets/icons/instagram.svg" alt="Instagram" />
+        <img src="assets/icons/ig.svg" alt="Instagram" />
       </a>
       <!-- YouTube link: Currently points to index.html, update to actual YouTube channel if available -->
       <a href="index.html">
-        <img src="assets/icons/youtube.svg" alt="YouTube" />
+        <img src="assets/icons/yt.svg" alt="YouTube" />
       </a>
     </div>
     <div class="footer-logo">
@@ -74,10 +122,10 @@
     <div class="footer-dev">
       <p>Developed By | Mohamed Mostafa</p>
       <a href="https://www.instagram.com/bravo___07___">
-        <img src="assets/icons/instagram.svg" alt="Instagram" />
+        <img src="assets/icons/ig.svg" alt="Instagram" />
       </a>
       <a href="https://x.com/ghost_42">
-        <img src="assets/icons/twitter.svg" alt="Twitter" />
+        <img src="assets/icons/tw.svg" alt="Twitter" />
       </a>
     </div>
     <!-- supporter here -->
