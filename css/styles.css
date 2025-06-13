@@ -398,3 +398,12 @@ footer {
 #welcome-text {
   transition: opacity 0.4s ease-in-out;
 }
+
+.parallax {
+background-image: url("img1.jpg");
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 200px;
+}
